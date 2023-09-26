@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;1,400&family=Poppins:wght@300;400;600&display=swap');
+body{
+	background-color: beige;
+	font-family: 'Poppins', sans-serif;
+	padding: 0;
+	margin: 0;
+	color: #171515;
+
+}
+
+.Header{
+	text-align: center;
+	padding: 20px;
+}
+
+h1{
+	display: inline-block;
+	border:2px solid #9caf88;
+	color: #171515;
+	padding: 10px 20px;
+
+}
+
+.navigation{
+	position: fixed;
+	top: 0;
+	right: 0;
+	background-color: beige;
+	padding: 10px;
+}
+
+.navigation a{
+	text-decoration: none;
+	font-weight: bold;
+	margin:0,10px;
+}
+
+.navigation a:visited{
+	color: #333333;
+}
+
+.navigation a:hover{
+	background:#9caf88;
+	color: #171515;
+}
+
+.content{
+	margin: 20px;
+
+}
+
+span{
+	color: #9caf88;
+}
+
+.image1{
+	display: inline-block;
+	vertical-align: top;
+	width: calc(40% - 13px);
+	box-sizing:border-box;
+	float: right;
+	margin-left: 26px;
+}
+
+.smallImage{
+	max-width: 100%;
+	height: auto;
+	width: 400px;
+}
+
+.text1{
+	display: block
+	vertical-align: top;
+	margin-left: 26px;
+	width: calc(60% - 13px);
+	box-sizing: border-box;
+	float: left;
+	padding: 20px;
+	border: 2px solid #9caf88;
+	text-align: left;
+}
+
+.content2{
+	margin-top: 26px;
+}
+.text2{
+	display: inline-block;
+	width: calc(60% - 13px);
+	box-sizing: border-box;
+	float: right;
+	padding: 20px;
+	border: 2px solid #ccccff;
+	text-align: left;
+}
+
+.image2{
+	display: inline-block;
+	vertical-align: top;
+	width: calc(40% - 13px);
+	box-sizing: border-box;
+	margin-left: 26px;
+}
+
+.mediumImage{
+	max-width: 100%;
+	height: auto;
+	width: 80%;
+}
+
+.Header2{
+	background-color: beige;
+	text-align: center;
+	padding: 20px;
+}
+
+
+.borderBox {
+	box-sizing: border-box;
+	display: inline-block;
+	border: 2px solid #9caf88;
+	padding: 20px;
+	max-width: 800px;
+	background-color: #f4f4f4;
+	text-align: left;
+
+}
+
+.border-box h2{
+	margin-bottom: 10px;
+}
+
+.action{
+	display: inline-block;
+	vertical-align: top;
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+.action .text3{
+	display: inline-block;
+	width: calc(50% - 5px);
+	box-sizing: border-box;
+	padding: 10px;
+
+}
+
+.action .image3{
+	display: inline-block;
+	width: calc(50% - 5px);
+	box-sizing: border-box;
+	padding: 10px;
+}
+
+.largeImage{
+	max-width: 100%;
+	height: auto;
+	width: 90%;
+}
+
+
+.Header3{
+	background-color: beige;
+	text-align: center;
+	padding: 20px;
+}
+
+.content3{
+	text-align: center;
+}
+
+.organization{
+	border: 2px solid #9caf88;
+	max-width: 800px;
+	margin: 0 auto 10px;
+	padding: 10px;	
+}
+
+.organizationName{
+	font-weight: bold;
+}
+
+
