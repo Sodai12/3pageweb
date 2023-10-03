@@ -8,13 +8,17 @@ body{
 
 }
 
+.container{
+	display: flex;
+}
+
+
 .Header{
 	text-align: center;
 	padding: 20px;
 }
 
 h1{
-	display: inline-block;
 	border:2px solid #9caf88;
 	color: #171515;
 	padding: 10px 20px;
@@ -23,8 +27,9 @@ h1{
 
 .navigation{
 	position: fixed;
-	top: 0;
-	right: 0;
+	justify-content: flex-end;
+	width: 200px;
+	height: 100%;
 	background-color: beige;
 	padding: 10px;
 }
@@ -32,28 +37,50 @@ h1{
 .navigation a{
 	text-decoration: none;
 	font-weight: bold;
-	margin:0,10px;
-}
-
-.navigation a:visited{
+	display: block;
+	padding: 10px;
 	color: #333333;
 }
 
 .navigation a:hover{
-	background:#9caf88;
+	background-color: #9caf88;
 	color: #171515;
 }
 
-.content{
-	margin: 20px;
+.mainContent {
+	flex: 1;
+	padding-left: 220px;
+}
 
+.Header{
+	text-align: center;
+	padding: 20px;
+}
+
+h1{
+	border: 2px solid #9caf88;
+	color: #171515;
+	padding: 10px 20px;
+}
+
+.content{
+	text-align: center;
+	margin: 20px;	
 }
 
 span{
 	color: #9caf88;
 }
 
-.image1{
+.contentContainer{
+	display: flex;
+	flex-direction: column;
+	margin: 20px;
+}
+
+
+
+/*.image1{
 	display: inline-block;
 	vertical-align: top;
 	width: calc(40% - 13px);
@@ -105,6 +132,37 @@ span{
 	max-width: 100%;
 	height: auto;
 	width: 80%;
+}*/
+
+.text{
+	padding: 20px;
+	border:2px solid #9caff88;
+	text-align: left;
+	box-sizing: border-box;
+}
+
+.text h2{
+	margin-bottom: 10px;
+}
+
+.image{
+	text-align: center;
+}
+
+.smallImage, .mediumImage{
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin-top:10px;
+}
+
+.video{
+	text-align: center;
+	margin: 20px;
+}
+
+iframe{
+	max-width: 100%;
 }
 
 .Header2{
@@ -113,40 +171,40 @@ span{
 	padding: 20px;
 }
 
-
-.borderBox {
-	box-sizing: border-box;
-	display: inline-block;
-	border: 2px solid #9caf88;
-	padding: 20px;
-	max-width: 800px;
-	background-color: #f4f4f4;
-	text-align: left;
+.contentContainer2{
+	display: flex;
+	flex-direction: column;
+	margin: 20px;
 
 }
 
-.border-box h2{
+.flexBox{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.borderBox2{
+	box-sizing: border-box;
+	flex:1;
+	border:2px solid #9caf88;
+	padding: 20px;
+	max-width: 800px;
+	text-align: left;
+}
+
+.borderBox2 h2{
+	margin-bottom: 10px;
+}
+.actionList{
+	list-style-type: disc;
+	padding-left: 20px;
+}
+.actionList Li{
 	margin-bottom: 10px;
 }
 
-.action{
-	display: inline-block;
-	vertical-align: top;
-	margin-bottom: 20px;
-	width: 100%;
-}
-
-.action .text3{
-	display: inline-block;
-	width: calc(50% - 5px);
-	box-sizing: border-box;
-	padding: 10px;
-
-}
-
-.action .image3{
-	display: inline-block;
-	width: calc(50% - 5px);
+.image3{
+	flex: 1;
 	box-sizing: border-box;
 	padding: 10px;
 }
@@ -154,29 +212,43 @@ span{
 .largeImage{
 	max-width: 100%;
 	height: auto;
-	width: 90%;
+	width:100%;
 }
 
 
 .Header3{
-	background-color: beige;
 	text-align: center;
-	padding: 20px;
+	margin-bottom: 20px;
 }
 
 .content3{
 	text-align: center;
 }
 
-.organization{
-	border: 2px solid #9caf88;
-	max-width: 800px;
-	margin: 0 auto 10px;
-	padding: 10px;	
+.organizationList{
+	list-style: none;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
-.organizationName{
-	font-weight: bold;
+.organizationList li{
+	width: calc(50% - 20px);
+	margin: 10px;
+	border: 2px solid #9caf88;
+	padding: 10px;
+	text-align: center;
+}
+
+.organizationList h2{
+	margin: 0;
+}
+
+.orgImage{
+	max-width: 100%;
+	height: auto;
+	margin-top: 10px;
 }
 
 
